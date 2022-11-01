@@ -1,0 +1,13 @@
+.gallery {
+    max-width: 1240px;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    margin: 40px 100px;
+    padding: 25px;
+}
+
+.gallery ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
