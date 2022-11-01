@@ -14,17 +14,17 @@ export default function Header() {
         <header className='header'>
             <Link to='/'>
                 <img
-                    className='header-logo'
+                    className='header__logo'
                     src={logo}
                     alt='Kasa'
                 />
             </Link>
 
-            <nav className='header-nav'>
+            <nav className='header__nav'>
                 <ul>
                     <li>
                         <NavLink
-                            className='header-link'
+                            className='header__link'
                             to='/'
                             style={({ isActive }) =>
                                 isActive ? activeStyle : undefined
@@ -37,7 +37,7 @@ export default function Header() {
 
                     <li>
                         <NavLink
-                            className='header-link'
+                            className='header__link'
                             to='/a-propos'
                             style={({ isActive }) =>
                                 isActive ? activeStyle : undefined

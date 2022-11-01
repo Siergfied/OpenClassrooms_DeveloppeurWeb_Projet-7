@@ -2,21 +2,41 @@
     display : flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 100px;
+    margin: 40px auto;
 }
 
-.header-nav ul {
+.header__nav ul {
     display: flex;
     align-items: center;
 }
 
-.header-nav li {
+.header__nav li {
     text-align: center;
     padding-left: 50px;
 }
 
-.header-link {
+.header__link {
     text-decoration: none;
     font-size: 24px;
     color : var(--primary-color)
+}
+
+@media screen and (max-width : 560px) {
+    .header__nav li {
+        padding: 10px;
+    }
+    .header__link {
+        font-size: 18px;
+    }
+
+    .header__logo {
+        height: 47px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .header__link {
+        font-size: 12px;
+    }
+
 }

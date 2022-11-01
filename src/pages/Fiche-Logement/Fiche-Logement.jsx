@@ -2,9 +2,11 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+//Components
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Collapse from '../../components/Collapse/Collapse';
 
+//Pages
 import Error from '../Error/Error';
 
 import './Fiche-Logement.css';
