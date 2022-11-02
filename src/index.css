@@ -9,6 +9,7 @@ body {
   font-style: normal;
   color : var(--primary-color);
   margin: 0;
+  min-width: 375px;
 }
 
 ul {

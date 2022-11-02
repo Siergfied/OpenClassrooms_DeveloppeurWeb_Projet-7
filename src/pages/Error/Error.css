@@ -20,3 +20,19 @@
     font-size: 18px;
     color: inherit;
 }
+
+@media screen and (max-width : 740px) {
+    .error__code {
+        font-size : 96px;
+    }
+
+    .error__text {
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 30px 130px;
+    }
+
+    .error__home-link {
+        font-size: 14px;
+    }
+}

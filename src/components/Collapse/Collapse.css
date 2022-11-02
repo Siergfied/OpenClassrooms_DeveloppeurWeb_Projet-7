@@ -38,3 +38,24 @@
 .dropdown__icon.open{
     transform: rotate(180deg);
 }
+
+@media screen and (max-width : 740px) {
+    .dropdown__title{
+        font-size: 13px !important;
+        padding: 0 10px;
+        margin-top: 20px;
+        height: 30px;
+    }
+
+    .dropdown__text {
+        font-size: 12px !important;
+    }
+
+    .dropdown__icon {
+        height: 15px;
+    }
+
+    .dropdown__text {
+        padding: 15px 10px;
+    }
+ }

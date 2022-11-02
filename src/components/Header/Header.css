@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width : 560px) {
+    .header {
+        margin: 20px auto;
+    }
     .header__nav li {
         padding: 10px;
     }

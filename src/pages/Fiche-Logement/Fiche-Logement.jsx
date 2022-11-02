@@ -48,58 +48,62 @@ export default function FicheLogement(props) {
             <main className='ficheLogement'>
                 <Slideshow pictures={housing.pictures} />
 
-                <div className='ficheLogement__summary'>
-                    <div>
-                        <h1 className='ficheLogement__title'>
-                            {housing.title}
-                        </h1>
-                        <h2 className='ficheLogement__location'>
-                            {housing.location}
-                        </h2>
-                    </div>
-
-                    <div className='ficheLogement__host'>
-                        <div className='ficheLogement__host--name'>
-                            <p>{housing.host.name.split(' ').slice(0, -1)}</p>
-                            <p>{housing.host.name.split(' ').slice(-1)}</p>
+                <div className='ficheLogement__container'>
+                    <div className='ficheLogement__summary'>
+                        <div>
+                            <h1 className='ficheLogement__title'>
+                                {housing.title}
+                            </h1>
+                            <h2 className='ficheLogement__location'>
+                                {housing.location}
+                            </h2>
                         </div>
 
-                        <img
-                            className='ficheLogement__host--picture'
-                            src={housing.host.picture}
-                            alt={housing.host.name}
-                        />
-                    </div>
-                </div>
-
-                <div className='ficheLogement__info'>
-                    <div className='ficheLogement__tag-container'>
-                        {housing.tags.map((tag) => (
-                            <span
-                                className='ficheLogement__tag'
-                                key={tag}
-                            >
-                                {tag}
-                            </span>
-                        ))}
+                        <div className='ficheLogement__tag-container'>
+                            {housing.tags.map((tag) => (
+                                <span
+                                    className='ficheLogement__tag'
+                                    key={tag}
+                                >
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
                     </div>
 
-                    <div className='ficheLogement__rating'>
-                        {ratingScale.map((scale) =>
-                            scale <= housing.rating ? (
-                                <img
-                                    src='../images/rating_star_colored.svg'
-                                    alt=''
-                                    key={scale}
-                                />
-                            ) : (
-                                <img
-                                    src='../images/rating_star_blank.svg'
-                                    alt=''
-                                    key={scale}
-                                />
-                            )
-                        )}
+                    <div className='ficheLogement__info'>
+                        <div className='ficheLogement__host'>
+                            <div className='ficheLogement__host--name'>
+                                <p>
+                                    {housing.host.name.split(' ').slice(0, -1)}
+                                </p>
+                                <p>{housing.host.name.split(' ').slice(-1)}</p>
+                            </div>
+
+                            <img
+                                className='ficheLogement__host--picture'
+                                src={housing.host.picture}
+                                alt={housing.host.name}
+                            />
+                        </div>
+
+                        <div className='ficheLogement__rating'>
+                            {ratingScale.map((scale) =>
+                                scale <= housing.rating ? (
+                                    <img
+                                        src='../images/rating_star_colored.svg'
+                                        alt=''
+                                        key={scale}
+                                    />
+                                ) : (
+                                    <img
+                                        src='../images/rating_star_blank.svg'
+                                        alt=''
+                                        key={scale}
+                                    />
+                                )
+                            )}
+                        </div>
                     </div>
                 </div>
 

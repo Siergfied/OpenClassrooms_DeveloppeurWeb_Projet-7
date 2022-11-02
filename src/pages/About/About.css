@@ -1,3 +1,19 @@
 .dropdown__container {
     margin: 0 200px 60px ;
 }
+
+@media screen and (max-width : 1340px) {
+    .dropdown__container {
+        margin: 0 100px 40px;
+    }
+
+    .banner {
+        height: 225px;
+    }
+}
+
+@media screen and (max-width : 740px) {
+    .dropdown__container {
+        margin: 0 0 20px;
+    }
+}
