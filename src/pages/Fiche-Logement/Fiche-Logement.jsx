@@ -31,13 +31,6 @@ export default function FicheLogement(props) {
             })
             .then((data) => {
                 setHousing(data.find((x) => x.id === id));
-                /*
-                for (let i = 0; i < data.length; i++) {
-                    if (data[i].id === id) {
-                        setHousing(data[i]);
-                    }
-                }
-                */
             });
     }, [id]);
 
