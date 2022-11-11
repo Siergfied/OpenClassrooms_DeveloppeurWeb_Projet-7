@@ -40,30 +40,27 @@ export default function Slideshow(props) {
             </div>
 
             {pictures.length > 1 ? (
-                <nav className='slideshow__nav'>
-                    <img
-                        className='slideshow__nav--left'
-                        src='../images/chevron.svg'
-                        alt=''
-                        onClick={OnPrevious}
-                    />
-                    <img
-                        className='slideshow__nav--right'
-                        src='../images/chevron.svg'
-                        alt=''
-                        onClick={onNext}
-                    />
-                </nav>
-            ) : (
-                ''
-            )}
-
-            {pictures.length > 0 ? (
-                <div className='slideshow__counter'>
-                    <span>
-                        {picturesIndex + 1}/{pictures.length}
-                    </span>
-                </div>
+                <>
+                    <nav className='slideshow__nav'>
+                        <img
+                            className='slideshow__nav--left'
+                            src='../images/chevron.svg'
+                            alt=''
+                            onClick={OnPrevious}
+                        />
+                        <img
+                            className='slideshow__nav--right'
+                            src='../images/chevron.svg'
+                            alt=''
+                            onClick={onNext}
+                        />
+                    </nav>
+                    <div className='slideshow__counter'>
+                        <span>
+                            {picturesIndex + 1}/{pictures.length}
+                        </span>
+                    </div>
+                </>
             ) : (
                 ''
             )}
