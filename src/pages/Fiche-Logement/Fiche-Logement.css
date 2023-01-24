@@ -1,5 +1,5 @@
 .ficheLogement {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .ficheLogement__container {
@@ -70,7 +70,7 @@
     margin-top: 20px;
 }
 
-.ficheLogement__rating img{
+.ficheLogement__rating img {
     margin-left: 10px;
 }
 
@@ -84,12 +84,11 @@
 }
 
 .dropdown__title,
-.dropdown__text
-{
+.dropdown__text {
     font-size: 18px;
 }
 
-@media screen and (max-width : 740px) {
+@media screen and (max-width: 740px) {
     .ficheLogement__container {
         flex-direction: column;
         margin-top: 15px;
@@ -126,7 +125,7 @@
         width: 32px;
     }
 
-    .ficheLogement__rating img{
+    .ficheLogement__rating img {
         height: 15px;
         margin-left: 0;
         margin-right: 10px;

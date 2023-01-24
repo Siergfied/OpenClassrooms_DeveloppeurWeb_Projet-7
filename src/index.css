@@ -1,21 +1,28 @@
 :root {
-  --primary-color : #FF6060;
-  --secondary-color : #F7F7F7;
+    --primary-color: #ff6060;
+    --secondary-color: #f7f7f7;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color : var(--primary-color);
-  margin: 0;
-  min-width: 375px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--primary-color);
+    margin: 0;
+    min-width: 375px;
+    height: 100vh;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 p,
@@ -25,25 +32,23 @@ h3,
 h4,
 h5,
 span {
-  margin: 0;
-  font-weight: 500;
+    margin: 0;
+    font-weight: 500;
 }
 
 .wrapper {
-  max-width: 1240px;
-  margin: 0 auto;
-  height: 100%;
+    max-width: 1240px;
+    padding-bottom: auto;
 }
 
-@media screen and (max-width : 1340px) {
-  .wrapper {
-    margin: 0 40px;
-  }
+@media screen and (max-width: 1340px) {
+    .wrapper {
+        margin: 0 40px auto;
+    }
 }
 
-@media screen and (max-width : 740px) {
-  .wrapper {
-    margin: 0 20px;
-  }
+@media screen and (max-width: 740px) {
+    .wrapper {
+        margin: 0 20px auto;
+    }
 }
-
