@@ -39,6 +39,7 @@ span {
 .wrapper {
     max-width: 1240px;
     padding-bottom: auto;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1340px) {
